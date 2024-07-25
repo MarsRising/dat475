@@ -1,0 +1,4 @@
+df <- read.csv("C://Users//****//OneDrive - SNHU//Desktop//SNHU Assignments//Applied Data Analysis//DATAAnova2.csv")
+anova <- aov(Percentage ~ as.factor(Model), data = df)
+summary(anova)
+TukeyHSD(anova)
